@@ -1,0 +1,134 @@
+html {
+  scroll-behavior: smooth;
+}
+
+p {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #6d6e71;
+  font-family: 'Libre Franklin', 'Helvetica', 'Arial', sans-serif;
+  text-align: justify;
+}
+
+main {
+  background-image: url('https://quickweightloss.net/wp-content/uploads/2019/10/NYR-BACKGROUND.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+main form {
+  padding: 1rem;
+  border: 1px solid #952d34;
+  background: #1b191982;
+  box-shadow: 0px 2px 6px #00000094;
+  border-radius: 8px;
+}
+
+main form button {
+  background: #28bd00;
+  color: white;
+  box-shadow: 0px 2px 6px #00000045;
+}
+
+div.free-consultation {
+  position: relative;
+  font-family: 'Lobster', cursive;
+}
+
+div.free-consultation h4 {
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+div.free-consultation h4::before, div.free-consultation h4::after {
+  background-color: white;
+  content: "";
+  display: inline-block;
+  height: 5px;
+  vertical-align: middle;
+  width: 15%;
+  margin: 1rem;
+}
+
+.oswald-font {
+  font-family: 'Oswald', sans-serif;
+}
+
+section.video-section div.img-container {
+  position: relative;
+}
+
+section.video-section div.img-container a.play-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background: #525252b3;
+  box-shadow: 0px 2px 6px #000000b3;
+  transition: all 0.1s ease-in;
+  transform: scale(1); 
+}
+section.video-section div.img-container a.play-icon:hover {
+  transform: scale(1.1);
+}
+
+section.video-section div.img-container i {
+  font-size: 6rem;
+  color: white;
+}
+
+img.watch {
+  max-width: 198px;
+}
+
+div.play-btn i {
+
+  font-size: 4rem;
+}
+
+p.text-keto {
+  color: #17a2b8;
+}
+
+footer a.back-to-top {
+  bottom: 5%;
+  right: 5%;
+  width: 48px;
+  height: 48px;
+  font-size: 3rem;
+  color: #121523;
+  transition: all 0.1s ease-in;
+  transform: scale(1);
+  visibility: hidden; 
+}
+
+footer a.back-to-top :hover {
+  transform: scale(1.1); 
+}
+
+footer a.back-to-top.active {
+  visibility: visible; 
+}
+
+/* ------------------------------ media queries ----------------------------- */
+
+@media (max-width: 768px) { 
+  div.free-consultation h4 {
+    font-size: 1.5rem;
+  }
+
+  div.free-consultation h4::before, div.free-consultation h4::after {
+    height: 0px;
+  }
+
+}
+
+@media (max-width: 576px) {
+  div.free-consultation h4 {
+    font-size: 1rem;
+  }
+}
